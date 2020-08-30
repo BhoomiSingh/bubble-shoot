@@ -28,7 +28,6 @@ function updateLasers() {
 function keyPressed() {
     //console.log (keyCode); 
     if (keyCode == 32) {
-        laserSound.play();
         lasers.push(createVector(p.x, p.y));
         laserVel.push(p5.Vector.fromAngle(radians(heading)).mult(7));
 
